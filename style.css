@@ -1,0 +1,302 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Scheherazade New', serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    height: 16vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+
+}
+.logo{
+    margin-left: 15%;
+}
+
+header nav ul{
+    display: flex;
+    margin-left: 10%;
+    /* border: 2px solid green; */
+    width: 105%;
+}
+
+header nav ul li{
+    list-style: none;
+    margin: 0px 10px;
+}
+
+header nav ul li a{
+    padding-bottom: 10px;
+    border: 3px solid white;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase; 
+    /* font-family: 'Scheherazade New', sans-serif; */
+    font-weight: 600;
+    transition: 0.7s ease-in-out;
+}
+
+header nav ul li a:hover{
+    border-bottom: #02a6d6;
+    border-width: 3px;
+    border-style: solid;
+}
+
+/* MAIN  */
+.main-content{
+    /* border: 2px solid green; */
+    padding: 50px 70px 0px 70px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-content .heading{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.row-1{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.sub-title{
+    /* margin: 0px 0px 10px 10px; */
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+.box{
+    /* border: 1px solid green; */
+    height: 130vh;
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-container{
+    height: 320px;
+    width:383px;
+    overflow: hidden;
+    /* border: 2px solid red; */
+    position: relative;
+}
+.card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 7px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.bg-img{
+    height: 100%;
+    width: 100%;   
+    background-position: center center;
+    background-size: cover;  
+    z-index: -1;
+    transition:all 0.25s ease-out;
+}
+.ben-10{
+    background: linear-gradient(rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0.6)),url('https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/06/04133345/CartoonNetwork_Ben10_462x386.jpg') center/cover no-repeat;
+}
+.heroes{
+    background:linear-gradient(rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0.6)), url('https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/05/29200714/CartoonNetwork_OKKO_462x386.jpg') center/cover no-repeat;
+}
+.tom-jerry{
+    background: linear-gradient(rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0.6)),url('https://wallpaperbat.com/img/294208-tom-and-jerry-wallpaper-top-free-tom-and-jerry-background.jpg') center/cover no-repeat;
+}
+.card-container:hover .bg-img{
+    transform: scale(1.04);
+}
+
+
+.row-2,.row-3{
+    /* width: 102%; */
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+}
+.small-card-container{
+    width: 285px;
+    height: 235px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+.small-card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 5px;
+    left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* border: 1px solid green; */
+}
+.small-bg-img{
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;  
+    z-index: -1;
+    transition:all 0.25s ease-out;
+    
+}
+.steven{
+    background: linear-gradient(rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)),url('https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/05/29200734/CartoonNetwork_StevenUniverse_462x386.jpg') center/cover no-repeat;
+}
+.bears{
+    background: linear-gradient(rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)),url('https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/06/04142757/CartoonNetwork_WeBareBears_462x3861.jpg') center/cover no-repeat;
+}
+.girls{
+    background: linear-gradient(rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)),url('https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/05/29200805/CartoonNetwork_ThePowerPuffGirls_462x386.jpg') center/cover no-repeat;
+}
+.regular{
+    background: linear-gradient(rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)),url('https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/05/29200826/CartoonNetwork_TheRegularShow_462x386.jpg') center/cover no-repeat;
+}
+.adventure{
+    background:linear-gradient(rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)), url('https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2018/05/29200850/CartoonNetwork_AdventureTime_462x386.jpg') center/cover no-repeat;
+}
+.apple-onion{
+    background: linear-gradient(rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)),url('https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2020/10/01130736/AppleAndOnion.jpg') center/cover no-repeat;
+}
+.amazing{
+    background: linear-gradient(rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)),url('https://assets.digicorus.corusdigitaldev.com/wp-content/uploads/sites/19/2020/10/01130745/AWOG.jpg') center/cover no-repeat;
+}
+.rick-monty{
+    background: linear-gradient(rgba(255, 255, 255, 0) 55%, rgba(0, 0, 0, 0.7)),url('https://images.alphacoders.com/641/641547.jpg') center/cover no-repeat;
+}
+
+.small-card-container:hover .small-bg-img{
+    transform: scale(1.05);
+}
+.small-card-container:hover i,.card-container:hover i{
+    color: rgb(24, 136, 241);
+}
+
+.about-contact{
+    margin: 70px 0px;
+    /* border: 1px solid red; */
+}
+.description{
+    margin-top: 10px;
+    word-spacing: 2px;
+    line-height: 30px;
+}
+.contact{
+    margin: 50px 0px 0px 0px;
+}
+
+.contact a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact a:hover{
+    color: teal;
+}
+
+/* FOOTER  */
+.footer-nav{
+    background-color: #202020;
+    padding: 70px 70px 40px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer nav ul{
+    display: flex;
+    margin-bottom: 30px;
+}
+footer nav li{
+    list-style: none;
+    margin-right: 50px;
+}
+footer nav li a{
+    text-decoration: none;
+    color:  white;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+}
+
+.copyright{
+    color: rgb(187 187 187);
+    font-size: 0.75rem;
+}
+.other-websites{
+    /* border: 1px solid gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.other-websites .title{
+    color: rgb(124, 124, 124);
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    /* margin-left: 150px; */
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.logos ul{
+    display: flex;
+}
+.corus{
+    padding: 10px 50px 10px 0px;
+    border-right: 1px solid rgb(124, 124, 124); 
+    height: 50px;
+    width: 120px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos li{
+    /* border: 1px solid green; */
+    font-size: 1rem;
+    width: 80px;
+    height: 40px;
+    margin: 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logos li img{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.logos li img:hover{
+    opacity: 1;
+}
