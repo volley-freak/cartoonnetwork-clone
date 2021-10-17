@@ -1,4 +1,4 @@
-# <a href="https://www.cartoonnetwork.ca/">CARTOON NETWORK</a> CLONE
+# <a href="https://www.cartoonnetwork.ca/">CARTOON NETWORK HOME PAGE</a> CLONE
 
 <h4>https://volley-freak.github.io/cartoonnetwork-clone/</h4>
 
